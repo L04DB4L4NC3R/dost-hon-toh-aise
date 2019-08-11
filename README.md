@@ -28,3 +28,5 @@ Some torque equation to be expressed in python
 pip install -r requirements.txt
 python sol1.py
 ```
+
+Made with :heart: and :octocat: for my friends
