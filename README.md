@@ -9,11 +9,8 @@
 </p>
 
 <h3 align="center">
-A repo for some of the problems my friends faced
+A repo for some of the problems my friends faced because friends in need are friends indeed, XD.
 </h3>
-
-
-> Friends in need are brothers indeed XD
 
 <br>
 
