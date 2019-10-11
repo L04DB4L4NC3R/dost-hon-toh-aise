@@ -15,7 +15,7 @@ A repo for some of the problems my friends faced because friends in need are fri
 <br>
 
 ### Problem 1
-Some torque equation to be expressed in python
+Some torque equation to be expressed in python - The equations are to be calculated in a recursive way for WAM Robotic Arm
 
 ![eqns](./static/sol1.jpeg)
 
