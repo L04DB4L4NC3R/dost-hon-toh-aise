@@ -26,7 +26,8 @@ pip install -r requirements.txt
 python sol1.py
 ```
 
-Made with :heart: and :octocat: for my friends
+<br>
+<br>
 
 ### Problem 2
 Proof of concept that load balancers are good at defending against DoS attacks 
@@ -64,4 +65,11 @@ nuke 5000
 * Go to `139.59.23.158:5000` and wait for a few seconds. The app works!!
 
 **Inference**
+
 Due to 4 replicas sharing load, it is very difficult to fully DoS the voting app. But our simple HTTP server could not handle the load and hence got DoSsed.
+
+<br>
+<br>
+
+Made with :heart: and :octocat: for my friends
+
