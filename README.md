@@ -27,3 +27,40 @@ python sol1.py
 ```
 
 Made with :heart: and :octocat: for my friends
+
+### Problem 2
+Proof of concept that load balancers are good at defending against DoS attacks 
+
+| PORT | What is deployed | Replicas | 
+| 5000 | The voting applicatioon | 4 | 
+| 5001 | The results | 1 |
+| 3000 | A simple HTTP server | 1 |
+
+* SSH into the VM
+
+```bash
+ssh root@139.59.23.158 
+# Ask the password from the admin
+```
+
+* Create a simple python server
+```
+python -m SimpleHTTPServer 3000
+```
+
+* DoS the server
+```
+nuke 3000
+```
+
+* Go to `139.59.23.158:3000` to see that it has been DoSsed. Now `Ctrl` + `C` to exit nuke mode and reload. DoS ends
+
+* DoS the voting app 
+```
+nuke 5000
+```
+
+* Go to `139.59.23.158:5000` and wait for a few seconds. The app works!!
+
+**Inference**
+Due to 4 replicas sharing load, it is very difficult to fully DoS the voting app. But our simple HTTP server could not handle the load and hence got DoSsed.
