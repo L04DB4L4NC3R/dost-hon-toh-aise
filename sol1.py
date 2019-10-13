@@ -1,3 +1,5 @@
+#Program to calculate the force and torque vectors in Robotic Arm
+
 from sympy import symbols
 import numpy as np
 
