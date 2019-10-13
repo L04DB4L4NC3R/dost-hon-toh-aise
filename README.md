@@ -32,6 +32,7 @@ Made with :heart: and :octocat: for my friends
 Proof of concept that load balancers are good at defending against DoS attacks 
 
 | PORT | What is deployed | Replicas | 
+|:----:|:----------------:|:--------:|
 | 5000 | The voting applicatioon | 4 | 
 | 5001 | The results | 1 |
 | 3000 | A simple HTTP server | 1 |
